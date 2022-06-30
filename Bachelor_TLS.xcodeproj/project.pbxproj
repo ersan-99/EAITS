@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E4CE25C280704FE00D830EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4CE25B280704FE00D830EF /* AppDelegate.swift */; };
+		0E4CE25E280704FE00D830EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4CE25D280704FE00D830EF /* SceneDelegate.swift */; };
+		0E4CE260280704FE00D830EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4CE25F280704FE00D830EF /* ViewController.swift */; };
+		0E4CE263280704FE00D830EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E4CE261280704FE00D830EF /* Main.storyboard */; };
+		0E4CE265280704FF00D830EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E4CE264280704FF00D830EF /* Assets.xcassets */; };
+		0E4CE268280704FF00D830EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E4CE266280704FF00D830EF /* LaunchScreen.storyboard */; };
+		0E4CE2DC2812402000D830EF /* CAroot.crt in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4CE2DB2812402000D830EF /* CAroot.crt */; };
+		0E4CE2DE2812409300D830EF /* Apple Root CA.cer in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4CE2DD2812409300D830EF /* Apple Root CA.cer */; };
+		52245A7D286CA1D0003B2058 /* Bachelor_TLSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52245A7C286CA1D0003B2058 /* Bachelor_TLSUITests.swift */; };
+		52245A7F286CA1D0003B2058 /* Bachelor_TLSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52245A7E286CA1D0003B2058 /* Bachelor_TLSUITestsLaunchTests.swift */; };
+		52ACCD752812E3A0000F3CFE /* NIOTLS in Frameworks */ = {isa = PBXBuildFile; productRef = 52ACCD742812E3A0000F3CFE /* NIOTLS */; };
+		52ACCD772814DFE1000F3CFE /* TLS_Connection2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACCD762814DFE1000F3CFE /* TLS_Connection2.swift */; };
+		52ACCD7A2815CA8A000F3CFE /* Crypto in Frameworks */ = {isa = PBXBuildFile; productRef = 52ACCD792815CA8A000F3CFE /* Crypto */; };
+		52ACCD7C2815CA8A000F3CFE /* _CryptoExtras in Frameworks */ = {isa = PBXBuildFile; productRef = 52ACCD7B2815CA8A000F3CFE /* _CryptoExtras */; };
+		52ACCD80281626A4000F3CFE /* NIOWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 52ACCD7F281626A4000F3CFE /* NIOWebSocket */; };
+		52ACCD832816275F000F3CFE /* SSLService in Frameworks */ = {isa = PBXBuildFile; productRef = 52ACCD822816275F000F3CFE /* SSLService */; };
+		52ACCD862816C9CE000F3CFE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 52ACCD852816C9CE000F3CFE /* Alamofire */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52245A80286CA1D0003B2058 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E4CE250280704FE00D830EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E4CE257280704FE00D830EF;
+			remoteInfo = Bachelor_TLS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5278CAEA286BA572005E4062 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0E4CE258280704FE00D830EF /* Bachelor_TLS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bachelor_TLS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E4CE25B280704FE00D830EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0E4CE25D280704FE00D830EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0E4CE25F280704FE00D830EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0E4CE262280704FE00D830EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0E4CE264280704FF00D830EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E4CE267280704FF00D830EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0E4CE269280704FF00D830EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E4CE2D62811546900D830EF /* myCert.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myCert.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E4CE2DB2812402000D830EF /* CAroot.crt */ = {isa = PBXFileReference; lastKnownFileType = text; name = CAroot.crt; path = ../old_CA/CAroot.crt; sourceTree = "<group>"; };
+		0E4CE2DD2812409300D830EF /* Apple Root CA.cer */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Apple Root CA.cer"; path = "../Apple Root CA.cer"; sourceTree = "<group>"; };
+		52245A75286CA0DA003B2058 /* Bachelor_TLS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Bachelor_TLS.xctestplan; sourceTree = "<group>"; };
+		52245A7A286CA1D0003B2058 /* Bachelor_TLSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Bachelor_TLSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52245A7C286CA1D0003B2058 /* Bachelor_TLSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bachelor_TLSUITests.swift; sourceTree = "<group>"; };
+		52245A7E286CA1D0003B2058 /* Bachelor_TLSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bachelor_TLSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		52ACCD762814DFE1000F3CFE /* TLS_Connection2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLS_Connection2.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E4CE255280704FE00D830EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ACCD752812E3A0000F3CFE /* NIOTLS in Frameworks */,
+				52ACCD80281626A4000F3CFE /* NIOWebSocket in Frameworks */,
+				52ACCD7A2815CA8A000F3CFE /* Crypto in Frameworks */,
+				52ACCD862816C9CE000F3CFE /* Alamofire in Frameworks */,
+				52ACCD7C2815CA8A000F3CFE /* _CryptoExtras in Frameworks */,
+				52ACCD832816275F000F3CFE /* SSLService in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E4CE2D32811546900D830EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E4CE2DE2812409300D830EF /* Apple Root CA.cer in Frameworks */,
+				0E4CE2DC2812402000D830EF /* CAroot.crt in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52245A77286CA1CF003B2058 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E4CE24F280704FE00D830EF = {
+			isa = PBXGroup;
+			children = (
+				0E4CE25A280704FE00D830EF /* Bachelor_TLS */,
+				52245A7B286CA1D0003B2058 /* Bachelor_TLSUITests */,
+				0E4CE259280704FE00D830EF /* Products */,
+				0E4CE2DA2812402000D830EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0E4CE259280704FE00D830EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E4CE258280704FE00D830EF /* Bachelor_TLS.app */,
+				0E4CE2D62811546900D830EF /* myCert.bundle */,
+				52245A7A286CA1D0003B2058 /* Bachelor_TLSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E4CE25A280704FE00D830EF /* Bachelor_TLS */ = {
+			isa = PBXGroup;
+			children = (
+				0E4CE25B280704FE00D830EF /* AppDelegate.swift */,
+				52245A75286CA0DA003B2058 /* Bachelor_TLS.xctestplan */,
+				0E4CE25D280704FE00D830EF /* SceneDelegate.swift */,
+				0E4CE25F280704FE00D830EF /* ViewController.swift */,
+				52ACCD762814DFE1000F3CFE /* TLS_Connection2.swift */,
+				0E4CE261280704FE00D830EF /* Main.storyboard */,
+				0E4CE264280704FF00D830EF /* Assets.xcassets */,
+				0E4CE269280704FF00D830EF /* Info.plist */,
+				0E4CE266280704FF00D830EF /* LaunchScreen.storyboard */,
+			);
+			path = Bachelor_TLS;
+			sourceTree = "<group>";
+		};
+		0E4CE2DA2812402000D830EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E4CE2DD2812409300D830EF /* Apple Root CA.cer */,
+				0E4CE2DB2812402000D830EF /* CAroot.crt */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52245A7B286CA1D0003B2058 /* Bachelor_TLSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52245A7C286CA1D0003B2058 /* Bachelor_TLSUITests.swift */,
+				52245A7E286CA1D0003B2058 /* Bachelor_TLSUITestsLaunchTests.swift */,
+			);
+			path = Bachelor_TLSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E4CE257280704FE00D830EF /* Bachelor_TLS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E4CE26C280704FF00D830EF /* Build configuration list for PBXNativeTarget "Bachelor_TLS" */;
+			buildPhases = (
+				0E4CE254280704FE00D830EF /* Sources */,
+				0E4CE255280704FE00D830EF /* Frameworks */,
+				0E4CE256280704FE00D830EF /* Resources */,
+				5278CAEA286BA572005E4062 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bachelor_TLS;
+			packageProductDependencies = (
+				52ACCD742812E3A0000F3CFE /* NIOTLS */,
+				52ACCD792815CA8A000F3CFE /* Crypto */,
+				52ACCD7B2815CA8A000F3CFE /* _CryptoExtras */,
+				52ACCD7F281626A4000F3CFE /* NIOWebSocket */,
+				52ACCD822816275F000F3CFE /* SSLService */,
+				52ACCD852816C9CE000F3CFE /* Alamofire */,
+			);
+			productName = Bachelor_TLS;
+			productReference = 0E4CE258280704FE00D830EF /* Bachelor_TLS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0E4CE2D52811546900D830EF /* myCert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E4CE2D72811546900D830EF /* Build configuration list for PBXNativeTarget "myCert" */;
+			buildPhases = (
+				0E4CE2D22811546900D830EF /* Sources */,
+				0E4CE2D32811546900D830EF /* Frameworks */,
+				0E4CE2D42811546900D830EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myCert;
+			productName = myCert;
+			productReference = 0E4CE2D62811546900D830EF /* myCert.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		52245A79286CA1CF003B2058 /* Bachelor_TLSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52245A82286CA1D0003B2058 /* Build configuration list for PBXNativeTarget "Bachelor_TLSUITests" */;
+			buildPhases = (
+				52245A76286CA1CF003B2058 /* Sources */,
+				52245A77286CA1CF003B2058 /* Frameworks */,
+				52245A78286CA1CF003B2058 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52245A81286CA1D0003B2058 /* PBXTargetDependency */,
+			);
+			name = Bachelor_TLSUITests;
+			productName = Bachelor_TLSUITests;
+			productReference = 52245A7A286CA1D0003B2058 /* Bachelor_TLSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E4CE250280704FE00D830EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					0E4CE257280704FE00D830EF = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
+					};
+					0E4CE2D52811546900D830EF = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					52245A79286CA1CF003B2058 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 0E4CE257280704FE00D830EF;
+					};
+				};
+			};
+			buildConfigurationList = 0E4CE253280704FE00D830EF /* Build configuration list for PBXProject "Bachelor_TLS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0E4CE24F280704FE00D830EF;
+			packageReferences = (
+				52ACCD732812E3A0000F3CFE /* XCRemoteSwiftPackageReference "swift-nio" */,
+				52ACCD782815CA8A000F3CFE /* XCRemoteSwiftPackageReference "swift-crypto" */,
+				52ACCD812816275F000F3CFE /* XCRemoteSwiftPackageReference "BlueSSLService" */,
+				52ACCD842816C9CE000F3CFE /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 0E4CE259280704FE00D830EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E4CE257280704FE00D830EF /* Bachelor_TLS */,
+				0E4CE2D52811546900D830EF /* myCert */,
+				52245A79286CA1CF003B2058 /* Bachelor_TLSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E4CE256280704FE00D830EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E4CE268280704FF00D830EF /* LaunchScreen.storyboard in Resources */,
+				0E4CE265280704FF00D830EF /* Assets.xcassets in Resources */,
+				0E4CE263280704FE00D830EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E4CE2D42811546900D830EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52245A78286CA1CF003B2058 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E4CE254280704FE00D830EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E4CE260280704FE00D830EF /* ViewController.swift in Sources */,
+				52ACCD772814DFE1000F3CFE /* TLS_Connection2.swift in Sources */,
+				0E4CE25C280704FE00D830EF /* AppDelegate.swift in Sources */,
+				0E4CE25E280704FE00D830EF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E4CE2D22811546900D830EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52245A76286CA1CF003B2058 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52245A7F286CA1D0003B2058 /* Bachelor_TLSUITestsLaunchTests.swift in Sources */,
+				52245A7D286CA1D0003B2058 /* Bachelor_TLSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52245A81286CA1D0003B2058 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E4CE257280704FE00D830EF /* Bachelor_TLS */;
+			targetProxy = 52245A80286CA1D0003B2058 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0E4CE261280704FE00D830EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E4CE262280704FE00D830EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0E4CE266280704FF00D830EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E4CE267280704FF00D830EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0E4CE26A280704FF00D830EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Root CA";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0E4CE26B280704FF00D830EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Root CA";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E4CE26D280704FF00D830EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N84LYBJPQQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bachelor_TLS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ersan-Ayguen.Bachelor-TLS1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0E4CE26E280704FF00D830EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N84LYBJPQQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bachelor_TLS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ersan-Ayguen.Bachelor-TLS1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0E4CE2D82811546900D830EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N84LYBJPQQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ersan-Ayguen.myCert";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		0E4CE2D92811546900D830EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N84LYBJPQQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ersan-Ayguen.myCert";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		52245A83286CA1D0003B2058 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test.Bachelor-TLSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bachelor_TLS;
+			};
+			name = Debug;
+		};
+		52245A84286CA1D0003B2058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test.Bachelor-TLSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bachelor_TLS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E4CE253280704FE00D830EF /* Build configuration list for PBXProject "Bachelor_TLS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E4CE26A280704FF00D830EF /* Debug */,
+				0E4CE26B280704FF00D830EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E4CE26C280704FF00D830EF /* Build configuration list for PBXNativeTarget "Bachelor_TLS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E4CE26D280704FF00D830EF /* Debug */,
+				0E4CE26E280704FF00D830EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E4CE2D72811546900D830EF /* Build configuration list for PBXNativeTarget "myCert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E4CE2D82811546900D830EF /* Debug */,
+				0E4CE2D92811546900D830EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52245A82286CA1D0003B2058 /* Build configuration list for PBXNativeTarget "Bachelor_TLSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52245A83286CA1D0003B2058 /* Debug */,
+				52245A84286CA1D0003B2058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52ACCD732812E3A0000F3CFE /* XCRemoteSwiftPackageReference "swift-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		52ACCD782815CA8A000F3CFE /* XCRemoteSwiftPackageReference "swift-crypto" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-crypto.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		52ACCD812816275F000F3CFE /* XCRemoteSwiftPackageReference "BlueSSLService" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kitura/BlueSSLService.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		52ACCD842816C9CE000F3CFE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52ACCD742812E3A0000F3CFE /* NIOTLS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52ACCD732812E3A0000F3CFE /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOTLS;
+		};
+		52ACCD792815CA8A000F3CFE /* Crypto */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52ACCD782815CA8A000F3CFE /* XCRemoteSwiftPackageReference "swift-crypto" */;
+			productName = Crypto;
+		};
+		52ACCD7B2815CA8A000F3CFE /* _CryptoExtras */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52ACCD782815CA8A000F3CFE /* XCRemoteSwiftPackageReference "swift-crypto" */;
+			productName = _CryptoExtras;
+		};
+		52ACCD7F281626A4000F3CFE /* NIOWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52ACCD732812E3A0000F3CFE /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOWebSocket;
+		};
+		52ACCD822816275F000F3CFE /* SSLService */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52ACCD812816275F000F3CFE /* XCRemoteSwiftPackageReference "BlueSSLService" */;
+			productName = SSLService;
+		};
+		52ACCD852816C9CE000F3CFE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52ACCD842816C9CE000F3CFE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0E4CE250280704FE00D830EF /* Project object */;
+}

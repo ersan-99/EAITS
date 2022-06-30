@@ -1,0 +1,27 @@
+{
+  "configurations" : [
+    {
+      "id" : "FA4E7A87-1FA4-46E3-904D-E414F900DD37",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "Bachelor_TLSUITests"
+      ],
+      "target" : {
+        "containerPath" : "container:Bachelor_TLS.xcodeproj",
+        "identifier" : "52245A79286CA1CF003B2058",
+        "name" : "Bachelor_TLSUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
