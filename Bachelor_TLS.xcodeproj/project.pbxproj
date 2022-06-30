@@ -17,13 +17,7 @@
 		0E4CE2DE2812409300D830EF /* Apple Root CA.cer in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4CE2DD2812409300D830EF /* Apple Root CA.cer */; };
 		52245A7D286CA1D0003B2058 /* Bachelor_TLSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52245A7C286CA1D0003B2058 /* Bachelor_TLSUITests.swift */; };
 		52245A7F286CA1D0003B2058 /* Bachelor_TLSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52245A7E286CA1D0003B2058 /* Bachelor_TLSUITestsLaunchTests.swift */; };
-		52ACCD752812E3A0000F3CFE /* NIOTLS in Frameworks */ = {isa = PBXBuildFile; productRef = 52ACCD742812E3A0000F3CFE /* NIOTLS */; };
 		52ACCD772814DFE1000F3CFE /* TLS_Connection2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACCD762814DFE1000F3CFE /* TLS_Connection2.swift */; };
-		52ACCD7A2815CA8A000F3CFE /* Crypto in Frameworks */ = {isa = PBXBuildFile; productRef = 52ACCD792815CA8A000F3CFE /* Crypto */; };
-		52ACCD7C2815CA8A000F3CFE /* _CryptoExtras in Frameworks */ = {isa = PBXBuildFile; productRef = 52ACCD7B2815CA8A000F3CFE /* _CryptoExtras */; };
-		52ACCD80281626A4000F3CFE /* NIOWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 52ACCD7F281626A4000F3CFE /* NIOWebSocket */; };
-		52ACCD832816275F000F3CFE /* SSLService in Frameworks */ = {isa = PBXBuildFile; productRef = 52ACCD822816275F000F3CFE /* SSLService */; };
-		52ACCD862816C9CE000F3CFE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 52ACCD852816C9CE000F3CFE /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,12 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52ACCD752812E3A0000F3CFE /* NIOTLS in Frameworks */,
-				52ACCD80281626A4000F3CFE /* NIOWebSocket in Frameworks */,
-				52ACCD7A2815CA8A000F3CFE /* Crypto in Frameworks */,
-				52ACCD862816C9CE000F3CFE /* Alamofire in Frameworks */,
-				52ACCD7C2815CA8A000F3CFE /* _CryptoExtras in Frameworks */,
-				52ACCD832816275F000F3CFE /* SSLService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,12 +161,6 @@
 			);
 			name = Bachelor_TLS;
 			packageProductDependencies = (
-				52ACCD742812E3A0000F3CFE /* NIOTLS */,
-				52ACCD792815CA8A000F3CFE /* Crypto */,
-				52ACCD7B2815CA8A000F3CFE /* _CryptoExtras */,
-				52ACCD7F281626A4000F3CFE /* NIOWebSocket */,
-				52ACCD822816275F000F3CFE /* SSLService */,
-				52ACCD852816C9CE000F3CFE /* Alamofire */,
 			);
 			productName = Bachelor_TLS;
 			productReference = 0E4CE258280704FE00D830EF /* Bachelor_TLS.app */;
@@ -252,10 +234,6 @@
 			);
 			mainGroup = 0E4CE24F280704FE00D830EF;
 			packageReferences = (
-				52ACCD732812E3A0000F3CFE /* XCRemoteSwiftPackageReference "swift-nio" */,
-				52ACCD782815CA8A000F3CFE /* XCRemoteSwiftPackageReference "swift-crypto" */,
-				52ACCD812816275F000F3CFE /* XCRemoteSwiftPackageReference "BlueSSLService" */,
-				52ACCD842816C9CE000F3CFE /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 0E4CE259280704FE00D830EF /* Products */;
 			projectDirPath = "";
@@ -656,74 +634,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		52ACCD732812E3A0000F3CFE /* XCRemoteSwiftPackageReference "swift-nio" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-nio.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-		52ACCD782815CA8A000F3CFE /* XCRemoteSwiftPackageReference "swift-crypto" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-crypto.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-		52ACCD812816275F000F3CFE /* XCRemoteSwiftPackageReference "BlueSSLService" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Kitura/BlueSSLService.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-		52ACCD842816C9CE000F3CFE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		52ACCD742812E3A0000F3CFE /* NIOTLS */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 52ACCD732812E3A0000F3CFE /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOTLS;
-		};
-		52ACCD792815CA8A000F3CFE /* Crypto */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 52ACCD782815CA8A000F3CFE /* XCRemoteSwiftPackageReference "swift-crypto" */;
-			productName = Crypto;
-		};
-		52ACCD7B2815CA8A000F3CFE /* _CryptoExtras */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 52ACCD782815CA8A000F3CFE /* XCRemoteSwiftPackageReference "swift-crypto" */;
-			productName = _CryptoExtras;
-		};
-		52ACCD7F281626A4000F3CFE /* NIOWebSocket */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 52ACCD732812E3A0000F3CFE /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOWebSocket;
-		};
-		52ACCD822816275F000F3CFE /* SSLService */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 52ACCD812816275F000F3CFE /* XCRemoteSwiftPackageReference "BlueSSLService" */;
-			productName = SSLService;
-		};
-		52ACCD852816C9CE000F3CFE /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 52ACCD842816C9CE000F3CFE /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0E4CE250280704FE00D830EF /* Project object */;
 }
